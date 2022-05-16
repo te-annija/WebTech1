@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scuderia Ferrari</title>
+        <!---Autors: Annija Karitone, ak21368-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+                <nav id="top-navbar">
+                    <ul>
+                        <li class="upper-menu"><img src="images/ferrari-logo.png" alt="Ferrari"></li>
+                        <li class="upper-menu"><a href="#section-info">Information</a></li>
+                        <li class="upper-menu"><a href="#section-drivers">Drivers</a></li>
+                        <li class="upper-menu"><a href="#section-races">Races 2022</a></li>
+                        <li class="upper-menu"><a href="#section-form">Predict</a></li>
+                    </ul>
+                </nav>
+                <div class="overlay">
+                    <h1 id="title">Scuderia Ferrari</h1>
+                    <h2 class="heading">Formula One</h2>
+                </div> 
+        </header>
+
+        <section id="section-info">
+            <h2 class="heading">Information</h2>
+            <p><b>Scuderia Ferrari</b> is the racing division of luxury Italian auto manufacturer Ferrari and the racing team that competes in Formula One racing. The team is also nicknamed <b>"The Prancing Horse"</b>, in
+            reference to their logo. It is the oldest surviving and most successful Formula One team, having competed in every world championship since the 1950 Formula One season.<br>
+            As a constructor, Ferrari has a record 16 Constructors' Championships, the last of which was won in 2008. <i>Alberto Ascari, Juan Manuel Fangio, Mike Hawthorn, Phil Hill, John Surtees, Niki Lauda, Jody Scheckter, Michael Schumacher and
+            Kimi Räikkönen </i>have won a record 15 Drivers' Championships for the team. Since Räikkönen's title in 2007 the team narrowly lost out on the 2008 drivers' title with Felipe Massa and the 2010 and 2012 drivers' titles with Fernando
+            Alonso. The 2020 Tuscan Grand Prix marked Ferrari's 1000th Grand Prix in Formula One. <br>Michael Schumacher is the team's most successful driver. Joining the team in 1996 and departing in 2006, he won five 
+            consecutive drivers' titles and 72 Grands Prix for the team. His titles came consecutively between 2000 and 2004, and
+            the team won consecutive constructors' titles between 1999 and 2004; this was the team's most successful period.<br> The team's 2022 drivers are <b>Charles Leclerc </b> and <b>Carlos Sainz Jr.</b></p>
+        </section>
+        <section id="section-drivers">
+            <h2 class="heading">Drivers</h2>
+            <ul>
+                <li id="Leclerc-info">
+                    <img src="images/leclerc.jpg" alt="Charles Leclerc">
+                    <div class="driver-text" id="driver-text-leclerc">
+                        <h3 >Charles Leclerc</h3>
+                        <button id="showLeclerc">More information</button>
+                    </div>
+                </li>
+                <li id="Sainz-info">
+                    <img src="images/sainz.jpg" alt="Carlos Sainz">
+                    <div class="driver-text" id="driver-text-sainz">
+                        <h3 >Carlos Sainz</h3>
+                        <button id="showSainz">More information</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="section-races">
+            <h2 class="heading"> Races 2022</h2>
+            <div id="races-content">
+               <ol>
+                    <li id="Bahrain">Bahrain Grand Prix </li>
+                    <li id="Saudi-Arabian">Saudi Arabian Grand Prix </li>
+                    <li id="Australian">Australian Grand Prix </li>
+                    <li id="Emilia-Romagna">Emilia Romagna Grand Prix </li>
+                    <li id="Miami">Miami Grand Prix </li>
+                    <li id="Spanish">Spanish Grand Prix </li>
+                    <li id="Monaco">Monaco Grand Prix </li>
+                    <li id="Azerbaijan">Azerbaijan Grand Prix </li>
+                    <li id="Canadian">Canadian Grand Prix </li>
+                    <li id="British">British Grand Prix </li>
+                    <li id="Austrian">Austrian Grand Prix </li>
+                    <li id="French">French Grand Prix </li>
+                    <li id="Hungarian">Hungarian Grand Prix </li>
+                    <li id="Belgian">Belgian Grand Prix </li>
+                </ol>
+                <div id="maps"></div> 
+            </div>
+        </section>
+        <section id="section-form">
+            <h2 class="heading">Leave your prediction!</h2>
+            <form method="POST" action="https://www.w3schools.com/action_page.php"  target="/">
+                    <p>Your name* <input type="text" name="name" id="form-name"><span id="nameInput"></span> </p> 
+                    <p>Ferrari place in Constructors' Championship 2022*  <input type="text" name="place" id="form-place"> <span id="placeInput"></span></p>
+                    <input type="submit" value="Submit" id="submit-button">  
+            </form>
+        </section>
+        <footer id="footer">
+            <img src="images/ferrari-logo.png" alt="Ferrari">
+        </footer>
+    </body>
+</html>

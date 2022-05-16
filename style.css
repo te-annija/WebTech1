@@ -1,0 +1,195 @@
+/*Autors: Annija Karitone, ak21368 */
+
+/*General*/
+*{
+    margin:0; 
+    padding:0;
+}
+body{
+    font-family: 'Eurostile', sans-serif;
+    color: white;
+    font-size:22px;
+    text-align: justify;
+    min-width: 1500px;
+    background-color: rgb(24,24,24);
+}
+.heading{ 
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size:38px;
+}
+section{ 
+    width: 1500px; 
+    margin: 0 auto;
+    margin-top: 40px; 
+    padding: 40px 40px 60px 40px;
+    background-color: rgba(204, 47, 49, 0.5);
+}
+
+/* Navigation bar*/
+#top-navbar{  
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    min-width: 1500px;
+    background-color: rgba(24,24,24,0.95);
+}
+#top-navbar ul .upper-menu{ 
+    display: block;
+    float:left;
+    padding: 30px 10px 30px 40px;
+}
+#top-navbar ul .upper-menu:first-child{ 
+    padding: 10px 10px 0px 40px; 
+}
+#top-navbar a{ 
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    text-transform: uppercase;
+}
+#top-navbar a:hover{
+    color: rgb(204, 47, 49); 
+}
+#top-navbar ul .upper-menu img{ 
+    height: 60px;
+}
+
+/* Hearder section*/ 
+#header{ 
+    height: 80vh; 
+    background-image: url(../exam/images/f1.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#title{ 
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: 10vh; 
+    text-align: center;
+}
+#header .overlay{ 
+    height: 100%;
+    background-color: rgba(204, 47, 49,0.2);
+}
+
+
+/*Drivers section*/
+#section-drivers ul{
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+    list-style-type:none;
+}
+#section-drivers ul li{ 
+    position: relative;
+}
+#section-drivers .driver-text{ 
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0; 
+    text-align: center;
+    background-color: rgba(24,24,24,0.8);
+}
+#section-drivers .information{
+    position: absolute; 
+    top: 0px; 
+    background-color: rgba(24,24,24,0.8);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+#section-drivers .information p:first-child {
+    padding-top: 60px;
+}
+#section-drivers button{ 
+    background-color: transparent;
+    border: none; 
+    color:rgb(204, 47, 49); 
+    font-size: 20px;
+    cursor: pointer; 
+}
+#section-drivers button:hover{ 
+    color: white;
+}
+
+/*Races section*/
+#section-races #races-content{ 
+    display: flex;
+}
+#section-races ol{ 
+    list-style-position: inside;
+}
+#section-races ol li{ 
+    padding: 10px; 
+    cursor: default; 
+}
+#section-races ol li:hover{ 
+    color:yellow; 
+}
+#section-races #maps{ 
+    width:70%;
+}
+#section-races #maps h3{ 
+    text-align: center;
+}
+
+/*Form section*/
+#section-form input{ 
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(24,24,24); 
+    border-radius: 9px;
+    margin: 0 10px 30px 10px; 
+    padding: 5px; 
+}
+#section-form #submit-button{ 
+    background-color: rgba(24,24,24, 0.8);
+    width: 200px;
+    font-size: 22px;
+    cursor: pointer;
+}
+#section-form #submit-button:hover{ 
+    background-color: rgb(24,24,24);
+}
+#section-form span{ 
+    color: yellow;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{ 
+    background-color: rgb(24,24,24);
+    padding: 40px 0;
+    width: 100%;
+}
+footer img{ 
+    height: 100px;
+    display: block;
+    margin: 0 auto; 
+}
+
+/*Print view*/
+@media print { 
+    #top-navbar, #section-form, #maps, button{ 
+        display: none;
+    }
+    
+    header, section, footer, #races-content{
+        margin:0; 
+        padding:0;
+        width: 70% ; 
+    }
+    #header{
+        height: max-content;
+    }
+    img{
+        max-width: 80%;
+    }
+    
+}
